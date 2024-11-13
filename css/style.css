@@ -191,6 +191,11 @@ main {
     display: none;
 }
 
+button:hover {
+    background-color: #eeeaea;
+    transition: 0.5s;
+}
+
 .container-banner {
     max-width: 1200px;
     margin: 20px auto;
