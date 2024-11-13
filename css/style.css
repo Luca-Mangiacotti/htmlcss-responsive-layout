@@ -50,6 +50,15 @@ li{
     padding: 15px 0px;
 }
 
+.recipe-intro .navigation ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipe-intro .navigation li{
+    margin: 30px 0px;
+}
+
 .btn{
     padding: 15px;
     background-color: #fff;
@@ -98,6 +107,11 @@ h4{
     padding-bottom: 25px;
 }
 
+h5{
+    color: white;
+    font-size: 16px;
+}
+
 span{
     font-weight: 200;
     color: black;
@@ -118,6 +132,10 @@ span{
     line-height: 25px;
     padding: 25px 0px;
     font-weight: 300;
+}
+
+.navigation a{
+    color: inherit;
 }
 
 /*----------------
@@ -169,15 +187,6 @@ main {
     padding: 35px 40px;
 }
 
-.navigation ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-.navigation li{
-    margin: 30px 0px;
-}
-
 .btn span{
     display: none;
 }
@@ -201,7 +210,29 @@ main {
 /*----------------
     FOOTER
 ------------------*/
+footer{
+    background-color: #7c69a4;
+    color: #ffff;
+    text-align: center;
+    padding: 30px;
+    line-height: 25px;
+}
 
+footer .foot-row{
+    display: block;
+}
+
+.foot-row .navigation ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 0px 50px;
+}
+
+.foot-row .navigation li{
+    padding: 0px;
+}
 
 
 /*----------------
@@ -243,6 +274,10 @@ main {
     .presentation p{
         padding: 0px;
     }
+
+    footer{
+        margin-top: 50px;
+    }
 }
 
 /* Desktop da 992px a infinito */
@@ -258,6 +293,22 @@ main {
 
     .btn span{
         display: inline;
+    }
+
+    footer{
+        text-align: left;
+    }
+
+    footer .foot-row{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .foot-row .navigation ul{
+        
+        justify-content: flex-end;
+        gap: 0px 10px;
+        
     }
 
 }
