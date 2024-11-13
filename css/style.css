@@ -91,7 +91,12 @@ h3 {
 h4{
     font-size: 20px;
     padding-bottom: 25px;
+}
 
+span{
+    font-weight: 200;
+    color: black;
+    padding-left: 5px;
 }
 
 
@@ -156,6 +161,12 @@ main {
     display: none;
 }
 
+.container-banner {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: none;
+}
+
 /*----------------
     FOOTER
 ------------------*/
@@ -182,10 +193,18 @@ main {
             display: inline;
     }
 
+    .navigation li .btn{
+        padding-left: 45px;
+        padding-right: 45px;
+        border-radius: 20px;
 
-    
+    }
+
+    .container-banner {
+        display: block;
+    }
+   
 }
-
 
 /* Desktop da 992px a infinito */
 @media screen and (min-width: 992px) {
@@ -204,6 +223,7 @@ main {
 
 }
 
+/* Desktop compreso tra 768px e 992px */
 @media screen and (max-width: 992px) and (min-width: 768px) {
 
     .detail-list ul{
