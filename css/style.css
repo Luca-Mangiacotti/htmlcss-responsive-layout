@@ -1,4 +1,13 @@
 /*----------------
+    DEBUG
+------------------*/
+
+.debug {
+    background-color: aqua;
+}
+
+
+/*----------------
     RESET
 ------------------*/
 * {
@@ -26,13 +35,30 @@
 /*----------------
     TYPOGRAPHY
 ------------------*/
+body {
+    font-family: "Montserrat", sans-serif;
+}
 
+h1 {
+    font-family: "Nerko One", cursive;
+    font-size: 46px;
+    text-shadow: 1px 1px 2px #333;
+}
 
 /*----------------
     HEADER
 ------------------*/
 
-
+header {
+    background-color: #fff;
+    color: #ff9614;
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
 
 /*----------------
     MAIN
@@ -49,3 +75,18 @@
 /*----------------
     RESPONSIVE
 ------------------*/
+
+/* Tablet da 768px a infinito */
+@media screen and (min-width: 768px) {
+    header {
+        text-align: left;
+    }
+}
+
+
+/* Desktop da 992px a infinito */
+@media screen and (min-width: 992px) {
+    
+
+
+}
